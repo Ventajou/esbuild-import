@@ -1,0 +1,13 @@
+{
+  "name": "esbuild-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.8.39"
+  },
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --splitting --format=esm --outdir=./build",
+    "start": "serve ./build"
+  }
+}
